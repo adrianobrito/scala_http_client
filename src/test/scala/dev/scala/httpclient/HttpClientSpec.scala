@@ -14,7 +14,7 @@ class HttpClientSpec extends FlatSpec with Matchers
 	  
 	  When("The HttpClient invoke a GET REQUEST for a URL at test/listar app hosted in localhost " + 
 			  "and receive a response")
-	  val response:Response = httpClient.get("test/listar")
+	  val response:Response = httpClient.get("http://localhost/test/listar")
 	  
 	  Then("The Response should have code 200")
 	  response.statusCode should be (200)
