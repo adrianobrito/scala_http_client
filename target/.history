@@ -1,0 +1,9 @@
+set name := "scala_http_client"
+set version := "0.1.1"
+set scalaVersion := "2.10.3"
+session save
+exit
+compile
+exit
+eclipse
+exit
