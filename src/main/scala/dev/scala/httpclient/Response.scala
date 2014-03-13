@@ -1,7 +1,7 @@
 package dev.scala.httpclient
 
-class Response{
-
-  def statusCode:Int = 200  
+class Response(content:String, val statusCode:Int, message:String){
+	
+  override def toString():String = content
   
 }

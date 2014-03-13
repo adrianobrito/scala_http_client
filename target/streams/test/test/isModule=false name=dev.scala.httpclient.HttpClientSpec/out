@@ -1,0 +1,21 @@
+[0m[[0minfo[0m] [0m[32mHttpClientSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke GET requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST for a URL at [google.com.br] resource hosted in localhost and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke GET requests with parameters to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST with parameters for a URL at [google.com.br] resource, hosted in localhost  and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke GET requests with Request Headers to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST with Request Headers for a URL at [google.com.br] resource, hosted in localhost  and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke POST requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke PUT requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke DELETE requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke HEAD requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke TRACE requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke OPTIONS requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke CONNECT requests to a remote server[0m[0m
