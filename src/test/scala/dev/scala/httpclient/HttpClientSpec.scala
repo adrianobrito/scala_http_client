@@ -12,7 +12,7 @@ class HttpClientSpec extends FlatSpec with Matchers
 	  Given("A HttpClient")
 	  val httpClient:HttpClient = new HttpClient
 	  
-	  When("The HttpClient invoke a GET REQUEST for a URL at test/listar app hosted in localhost " + 
+	  When("The HttpClient invoke a GET REQUEST for a URL at test/listar resource hosted in localhost " + 
 			  "and receive a response")
 	  val response:Response = httpClient.get("http://localhost/test/listar")
 	  
