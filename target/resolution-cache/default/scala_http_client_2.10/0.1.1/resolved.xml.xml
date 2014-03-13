@@ -4,7 +4,7 @@
 		module="scala_http_client_2.10"
 		revision="0.1.1"
 		status="integration"
-		publication="20140313100618"
+		publication="20140313101811"
 	>
 		<description>
 		scala_http_client
@@ -34,5 +34,6 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.3" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.10" rev="2.1.0" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>
