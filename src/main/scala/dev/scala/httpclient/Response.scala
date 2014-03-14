@@ -1,7 +1,14 @@
 package dev.scala.httpclient
 
-class Response(content:String, val statusCode:Int, message:String){
+import java.io.BufferedWriter
+import java.net.HttpURLConnection
+import java.io.OutputStream
+import java.net.URL
+import java.io.OutputStreamWriter
+
+class Response(content:String, val statusCode:Int, val message:String){
 	
   override def toString():String = content
   
 }
+
