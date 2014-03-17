@@ -65,6 +65,10 @@ class Request(var url:String, method:String,
       connection.sendPostParameters(_params)
     }
     
+    if(_data != null){
+      connection.sendData(_data.getBytes("utf-8"))
+    }
+    
     val responseContent: String = fromInputStream(connection.getInputStream()).getLines().mkString("\n")
     val response: Response = new Response(responseContent, connection.getResponseCode, connection.getResponseMessage);
     

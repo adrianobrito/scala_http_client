@@ -70,6 +70,21 @@ class HttpClientSpec extends FlatSpec with Matchers
 	  response.statusCode should be (200)
 	}
 	
+	it should "invoke POST requests to a remote server" in {
+	  Given("A HttpClient")
+	  val httpClient = new HttpClient
+	  
+	  When("The HttpClient invoke a POST REQUEST for a URL at [localhost/get] resource hosted in localhost " + 
+			  "and receive a response")
+	  val response:Response = httpClient
+	  							.post("http://localhost:8080/httptest/post")
+	  							.execute
+	  							
+	  Then("The Response should have code 200")
+	  response.statusCode should be (200)
+	  
+	}
+	
 	it should " invoke POST requests with parameters to a remote server "in {
 		Given("A HttpClient")
 		val httpClient:HttpClient = new HttpClient
@@ -83,6 +98,10 @@ class HttpClientSpec extends FlatSpec with Matchers
 		Then("The Response should have code 200")
 		response.statusCode should be (200)
 	}
+	
+	it should " invoke a POST REQUEST with data to a remote server " in{
+	  
+	} 
 	
 	it should " invoke PUT requests to a remote server "in {
 	  
