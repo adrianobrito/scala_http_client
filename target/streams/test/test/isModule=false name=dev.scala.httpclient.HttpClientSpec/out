@@ -4,24 +4,17 @@
 [0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
 [0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST for a URL at [localhost/get] resource hosted in localhost and receive a response [0m[0m
 [0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
-[0m[[0minfo[0m] [0m[31m- should invoke GET requests with parameters to a remote server *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  java.io.IOException: Server returned HTTP response code: 405 for URL: http://localhost:8080/httptest/get[0m[0m
-[0m[[0minfo[0m] [0m[31m  at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at dev.scala.httpclient.Request.execute(Request.scala:49)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at dev.scala.httpclient.HttpClientSpec$$anonfun$2.apply$mcV$sp(HttpClientSpec.scala:34)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at dev.scala.httpclient.HttpClientSpec$$anonfun$2.apply(HttpClientSpec.scala:25)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at dev.scala.httpclient.HttpClientSpec$$anonfun$2.apply(HttpClientSpec.scala:25)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
-[0m[[0minfo[0m] [0m[31m  + Given A HttpClient [0m[0m
-[0m[[0minfo[0m] [0m[31m  + When The HttpClient invoke a GET REQUEST with parameters for a URL at [httptest/get] resource, hosted in localhost  and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke GET requests with parameters to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST with parameters for a URL at [httptest/get] resource, hosted in localhost  and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
 [0m[[0minfo[0m] [0m[32m- should invoke GET requests with Request Headers to a remote server[0m[0m
 [0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
 [0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST with Request Headers for a URL at [httptest/get] resource, hosted in localhost  and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke GET requests with parameters, Request Headers to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST with Parameters and Request Headers for a URL at [httptest/get] resource, hosted in localhost  and receive a response [0m[0m
 [0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
 [0m[[0minfo[0m] [0m[32m- should invoke POST requests with parameters to a remote server[0m[0m
 [0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m

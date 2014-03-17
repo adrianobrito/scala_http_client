@@ -6,8 +6,9 @@ import java.io.OutputStream
 import java.net.URL
 import java.io.OutputStreamWriter
 import scala.io.Source._
+import collection.JavaConversions._
 
-class Request(url:String, method:String, 
+class Request(var url:String, method:String, 
           	  val timeout:Int, 
           	  var _data:String = null,
           	  var _params:Map[String,String] = null, 
@@ -16,7 +17,25 @@ class Request(url:String, method:String,
   implicit def httpConnectionToParametrizedHttpConnection(conn:HttpURLConnection) = new ParametrizedHttpURLConnection(conn)
   
   def params(map:Map[String,String]):Request = {
-    _params = map;
+    if(method == "GET"){
+      var first = false;
+      val result:StringBuilder = new StringBuilder().append("?");
+      map.foreach{ case (key,value) => {
+	    		if(first) first = true;
+	    		else result.append("&");
+	    		
+	    		result.append(key)
+	    			  .append("=")
+	    			  .append(value)
+	    	} 
+	  }
+      
+      url += result.toString
+      
+    } else{
+    	_params = map;
+    }
+    
     this
   }
   
@@ -43,7 +62,7 @@ class Request(url:String, method:String,
       connection.setDoOutput(true)
       _headers += ("Content-Type" -> "application/x-www-form-urlencoded")
       _headers += ("charset" -> "utf-8")
-      connection.sendParameters(_params)
+      connection.sendPostParameters(_params)
     }
     
     val responseContent: String = fromInputStream(connection.getInputStream()).getLines().mkString("\n")
@@ -62,6 +81,7 @@ object HttpURLConnectionFactory{
     val connection: HttpURLConnection = new URL(url).openConnection().asInstanceOf[HttpURLConnection];
     connection.setDoInput(true);
     connection.setUseCaches(false);
+    connection.setInstanceFollowRedirects(false); 	
     connection.setConnectTimeout(timeout * 1000);
     connection.setReadTimeout(timeout * 1000);
     connection
@@ -70,7 +90,7 @@ object HttpURLConnectionFactory{
 }
 
 class ParametrizedHttpURLConnection(val connection:HttpURLConnection){
-  def sendParameters(map:Map[String,String]) {
+  def sendPostParameters(map:Map[String,String]) {
     var first:Boolean = true;
     val result:StringBuilder = new StringBuilder();
     map.foreach{ case (key,value) => {
@@ -83,18 +103,15 @@ class ParametrizedHttpURLConnection(val connection:HttpURLConnection){
     	} 
     }
     
-    val outputStream:OutputStream = connection.getOutputStream()
-    val bufferedWriter:BufferedWriter =
-    			   new BufferedWriter(new OutputStreamWriter(outputStream))
-    bufferedWriter.write(result.toString)
-    bufferedWriter.flush()
-    bufferedWriter.close()
-    outputStream.close()
-    
-    connection.disconnect()
+    val dataBytes:Array[Byte] = result.toString.getBytes("utf-8")
     connection.setRequestProperty("Content-Length", result.toString.getBytes.length.toString)
-    connection.connect();
+    connection.getOutputStream.write(dataBytes)
   } 
+  
+  def sendData(data:Array[Byte]){
+    connection.setRequestProperty("Content-Length", data.length.toString)
+    connection.getOutputStream.write(data)
+  }
   
   def setRequestHeaders(headers:Map[String, String]){
     headers.foreach{ case (key,value) => 
