@@ -40,3 +40,7 @@
 [0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
 [0m[[0minfo[0m] [0m[32m  + When A HttpClient invoke a DELETE REQUEST with params for a URL at [httptest/delete] resource, hosted in localhost and receive a response [0m[0m
 [0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke GET requests to a remote server and format the response[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST for a URL at [localhost/get] resource hosted in localhost and receive a formatted response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 and the formatted response should be the reverse response content [0m[0m

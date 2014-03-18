@@ -3,3 +3,5 @@
 [0m[[0minfo[0m] [0m[32m- should have the response content[0m[0m
 [0m[[0minfo[0m] [0m[32mThe Response [0m[0m
 [0m[[0minfo[0m] [0m[32m- should have the status code[0m[0m
+[0m[[0minfo[0m] [0m[32mThe Response [0m[0m
+[0m[[0minfo[0m] [0m[32m- should format the response to a object[0m[0m

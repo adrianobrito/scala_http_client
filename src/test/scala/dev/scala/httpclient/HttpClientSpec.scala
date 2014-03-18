@@ -156,4 +156,20 @@ class HttpClientSpec extends FlatSpec with Matchers
 		response.statusCode should be (200)
 	}
 	
+	it should " invoke GET requests to a remote server and format the response"in {
+	  Given("A HttpClient")
+	  val httpClient:HttpClient = new HttpClient
+	  
+	  When("The HttpClient invoke a GET REQUEST for a URL at [localhost/get] resource hosted in localhost " + 
+			  "and receive a formatted response")
+	  val response:Response = httpClient 
+	  							.get("http://localhost:8080/httptest/get")
+	  							.execute
+	  val formattedResponse:String = response.format_to[String]((s:String) => s.reverse)
+	  							
+	  Then("The Response should have code 200 and the formatted response should be the reverse response content")
+	  response.statusCode should be (200)
+	  formattedResponse should be(response.toString.reverse)
+	}
+	
 }
