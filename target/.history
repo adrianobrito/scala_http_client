@@ -23,3 +23,15 @@ test
 compile
 test
 exit
+container:start
+exit
+eclipse
+compile
+teste
+test
+compile
+test
+compile
+test
+exi
+exit

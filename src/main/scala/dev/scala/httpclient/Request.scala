@@ -17,7 +17,7 @@ class Request(var url:String, method:String,
   implicit def httpConnectionToParametrizedHttpConnection(conn:HttpURLConnection) = new ParametrizedHttpURLConnection(conn)
   
   def params(map:Map[String,String]):Request = {
-    if(method == "GET"){
+    if(method == "GET" || method == "DELETE"){
       var first = false;
       val result:StringBuilder = new StringBuilder().append("?");
       map.foreach{ case (key,value) => {
@@ -66,6 +66,8 @@ class Request(var url:String, method:String,
     }
     
     if(_data != null){
+      if(method != "DELETE")
+    	  connection.setDoOutput(true)
       connection.sendData(_data.getBytes("utf-8"))
     }
     

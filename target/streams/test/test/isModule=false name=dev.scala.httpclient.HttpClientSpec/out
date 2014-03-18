@@ -16,13 +16,27 @@
 [0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
 [0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a GET REQUEST with Parameters and Request Headers for a URL at [httptest/get] resource, hosted in localhost  and receive a response [0m[0m
 [0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke POST requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When The HttpClient invoke a POST REQUEST for a URL at [localhost/get] resource hosted in localhost and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
 [0m[[0minfo[0m] [0m[32m- should invoke POST requests with parameters to a remote server[0m[0m
 [0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
 [0m[[0minfo[0m] [0m[32m  + When A HttpClient invoke a POST REQUEST with parameters for a URL at [httptest/post] resource, hosted in localhost and receive a response [0m[0m
 [0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
-[0m[[0minfo[0m] [0m[32m- should invoke PUT requests to a remote server[0m[0m
-[0m[[0minfo[0m] [0m[32m- should invoke DELETE requests to a remote server[0m[0m
-[0m[[0minfo[0m] [0m[32m- should invoke HEAD requests to a remote server[0m[0m
-[0m[[0minfo[0m] [0m[32m- should invoke TRACE requests to a remote server[0m[0m
-[0m[[0minfo[0m] [0m[32m- should invoke OPTIONS requests to a remote server[0m[0m
-[0m[[0minfo[0m] [0m[32m- should invoke CONNECT requests to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke a POST REQUEST with JSON data to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When A HttpClient invoke a POST REQUEST with JSON data for a URL at [httptest/post] resource, hosted in localhost and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke PUT requests with params to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When A HttpClient invoke a PUT REQUEST with params for a URL at [httptest/put] resource, hosted in localhost and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke PUT requests with JSON data to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When A HttpClient invoke a PUT REQUEST with JSON data for a URL at [httptest/put] resource, hosted in localhost and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should invoke DELETE requests with params to a remote server[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given A HttpClient [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When A HttpClient invoke a DELETE REQUEST with params for a URL at [httptest/delete] resource, hosted in localhost and receive a response [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then The Response should have code 200 [0m[0m

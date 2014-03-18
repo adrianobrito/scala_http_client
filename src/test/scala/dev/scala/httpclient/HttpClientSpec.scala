@@ -32,9 +32,7 @@ class HttpClientSpec extends FlatSpec with Matchers
 	  							.get("http://localhost:8080/httptest/get")
 	  							.params(Map("teste" -> "teste"))
 	  							.execute
-	  							
-	  println(response)
-	  
+	  					
 	  Then("The Response should have code 200")
 	  response.statusCode should be (200)
 	}
@@ -94,38 +92,68 @@ class HttpClientSpec extends FlatSpec with Matchers
 		val response:Response = httpClient.post("http://localhost:8080/httptest/post")
 										  .params(Map("usuario" -> "adrianos", "senha" -> "supertime"))
 										  .execute
+
+										  
+		Then("The Response should have code 200")
+		response.statusCode should be (200)
+	}
+	
+	it should " invoke a POST REQUEST with JSON data to a remote server " in{
+		Given("A HttpClient")
+		val httpClient:HttpClient = new HttpClient
+		
+		When("A HttpClient invoke a POST REQUEST with JSON data for a URL at [httptest/post] resource, " +
+		     "hosted in localhost and receive a response")
+		val response:Response = httpClient.post("http://localhost:8080/httptest/post")
+										  .data("{nome: 'Adriano Brito', cpf: '0382378'}")
+										  .headers(Map("Content-Type" -> "application/json"))
+										  .execute
+		
+		Then("The Response should have code 200")
+		response.statusCode should be (200)
+	} 
+	
+	it should " invoke PUT requests with params to a remote server "in {
+		Given("A HttpClient")
+		val httpClient:HttpClient = new HttpClient
+		
+		When("A HttpClient invoke a PUT REQUEST with params for a URL at [httptest/put] resource, " +
+		     "hosted in localhost and receive a response")
+		val response:Response = httpClient.put("http://localhost:8080/httptest/put")
+										  .params(Map("usuario" -> "adrianos", "senha" -> "supertime"))
+										  .execute
 		
 		Then("The Response should have code 200")
 		response.statusCode should be (200)
 	}
 	
-	it should " invoke a POST REQUEST with data to a remote server " in{
-	  
-	} 
-	
-	it should " invoke PUT requests to a remote server "in {
-	  
+	it should " invoke PUT requests with JSON data to a remote server "in {
+		Given("A HttpClient")
+		val httpClient:HttpClient = new HttpClient
+		
+		When("A HttpClient invoke a PUT REQUEST with JSON data for a URL at [httptest/put] resource, " +
+		     "hosted in localhost and receive a response")
+		val response:Response = httpClient.put("http://localhost:8080/httptest/put")
+										  .data("{nome: 'Adriano Brito', cpf: '0382378'}")
+										  .headers(Map("Content-Type" -> "application/json"))
+										  .execute
+		
+		Then("The Response should have code 200")
+		response.statusCode should be (200)
 	}
 	
-	it should " invoke DELETE requests to a remote server "in {
-	  
+	it should " invoke DELETE requests with params to a remote server "in {
+		Given("A HttpClient")
+		val httpClient:HttpClient = new HttpClient
+		
+		When("A HttpClient invoke a DELETE REQUEST with params for a URL at [httptest/delete] resource, " +
+		     "hosted in localhost and receive a response")
+		val response:Response = httpClient.delete("http://localhost:8080/httptest/delete")
+										  .params(Map("usuario" -> "adrianos", "senha" -> "supertime"))
+										  .execute
+		
+		Then("The Response should have code 200")
+		response.statusCode should be (200)
 	}
 	
-	it should " invoke HEAD requests to a remote server "in {
-	  
-	}
-	
-	it should " invoke TRACE requests to a remote server "in {
-	  
-	}
-	
-	it should " invoke OPTIONS requests to a remote server "in {
-	  
-	}
-	
-	it should " invoke CONNECT requests to a remote server "in {
-	  
-	}
-  
-
 }

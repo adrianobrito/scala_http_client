@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/adrianos/Scala/scala_http_client/}scala_http_client...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/adriano/Work/Scala/projects/scala_http_client/}scala_http_client...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#scala_http_client_2.10;0.1.1[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#scala_http_client_2.10;0.1.1 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#scala_http_client_2.10;0.1.1->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@bd454bc[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57beb073[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -162,7 +162,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#scala_http_client_2.10;0.1.1->org.scala-lang#scala-library;2.10.3 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#scala_http_client_2.10;0.1.1->org.scala-lang#scala-library;2.10.3 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#scala_http_client_2.10;0.1.1->org.scala-lang#scala-library;2.10.3 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/default/scala_http_client_2.10/0.1.1/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/default/scala_http_client_2.10/0.1.1/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.1.0!scalatest_2.10.jar[0m
@@ -170,19 +170,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 338ms :: artifacts dl 12ms[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 compile produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 runtime produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 test produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 provided produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 optional produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 compile-internal produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 runtime-internal produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 test-internal produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 plugin produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 sources produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 docs produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 pom produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 scala-tool produced in /Users/adrianos/Scala/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (338ms resolve - 12ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 172ms :: artifacts dl 8ms[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 compile produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 runtime produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 test produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 provided produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 optional produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 compile-internal produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 runtime-internal produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 test-internal produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 plugin produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 sources produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 docs produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 pom produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala_http_client_2.10;0.1.1 scala-tool produced in /home/adriano/Work/Scala/projects/scala_http_client/target/resolution-cache/reports/default-scala_http_client_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (172ms resolve - 8ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
