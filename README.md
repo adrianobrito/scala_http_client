@@ -31,13 +31,13 @@ Invoking GET requests on specified URL with reversed Response Content:
                                             .execute;
     val formattedResponse:String = response.format_to[String]((s:String) => s.reverse)
 
-You could format the response to any Object. You could use this feature to format JSON or XML Requests to Object, integrated with librarys like json4s or Jackson, like the example below:
+You could format the response to any Class. You could use this feature to format JSON or XML Requests to any Class, integrated with librarys like json4s or Jackson, like the example below:
 
     val formattedResponse:String = response.format_to[Person]((s:String) => service.deserialize[T](s));
 
 ### Tests
 
-The tests need a [scalawebtemplate](https://github.com/adrianobrito/scalawebtemplate) project to execute the tests. 
+You will need a [scalawebtemplate](https://github.com/adrianobrito/scalawebtemplate) project to execute the tests. 
 
 ### Add to your Project
 
