@@ -44,3 +44,6 @@ test
 exit
 test
 exit
+compile
+package
+exit

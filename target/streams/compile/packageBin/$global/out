@@ -1,0 +1,31 @@
+[0m[[0minfo[0m] [0mPackaging /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/scala_http_client_2.10-0.1.1.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/HttpClient$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/HttpClient$.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/Request$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/Request$.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/ParametrizedHttpURLConnection.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/ParametrizedHttpURLConnection.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/Request$$anonfun$params$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/Request$$anonfun$params$1.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/ParametrizedHttpURLConnection$$anonfun$setRequestHeaders$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/ParametrizedHttpURLConnection$$anonfun$setRequestHeaders$1.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/Request.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/Request.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/HttpClient.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/HttpClient.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/HttpURLConnectionFactory$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/HttpURLConnectionFactory$.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/ParametrizedHttpURLConnection$$anonfun$sendPostParameters$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/ParametrizedHttpURLConnection$$anonfun$sendPostParameters$1.class[0m
+[0m[[0mdebug[0m] [0m	dev[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/Response.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/Response.class[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient[0m
+[0m[[0mdebug[0m] [0m	dev/scala/httpclient/HttpURLConnectionFactory.class[0m
+[0m[[0mdebug[0m] [0m	  /home/adriano/Work/Scala/projects/scala_http_client/target/scala-2.10/classes/dev/scala/httpclient/HttpURLConnectionFactory.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
