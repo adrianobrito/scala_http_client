@@ -20,7 +20,7 @@ Invoking GET requests on specified URL with params:
 
 Invoking POST requests on specified URL with Headers and sending Data:
 
-    val response:Response = new HttpClient().post("http://localhost:8080/httptest/post")
+    val response:Response = new HttpClient().post("http://url.com/json")
                                             .data("{nome: 'Adriano Brito', cpf: '0382378'}")
                                             .headers(Map("Content-Type" -> "application/json"))
                                             .execute
