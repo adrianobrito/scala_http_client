@@ -10,5 +10,9 @@ class Response(content:String, val statusCode:Int, val message:String){
 	
   override def toString():String = content
   
+  def format_to[T](formatter:(String) => T):T ={
+    formatter(content)
+  }
+  
 }
 

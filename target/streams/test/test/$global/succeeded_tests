@@ -1,6 +1,6 @@
 #Successful Tests
-#Mon Mar 17 21:29:46 BRT 2014
-dev.scala.httpclient.JsonResponseFormatterSpec=1395102586089
-dev.scala.httpclient.ResponseSpec=1395102586090
-dev.scala.httpclient.XmlResponseFormatterSpec=1395102586089
-dev.scala.httpclient.HttpClientSpec=1395102586263
+#Tue Mar 18 08:31:18 BRT 2014
+dev.scala.httpclient.JsonResponseFormatterSpec=1395142277880
+dev.scala.httpclient.ResponseSpec=1395142277880
+dev.scala.httpclient.XmlResponseFormatterSpec=1395142277880
+dev.scala.httpclient.HttpClientSpec=1395142278692

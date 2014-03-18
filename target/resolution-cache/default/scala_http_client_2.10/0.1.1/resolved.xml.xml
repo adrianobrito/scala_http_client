@@ -4,7 +4,7 @@
 		module="scala_http_client_2.10"
 		revision="0.1.1"
 		status="integration"
-		publication="20140317203008"
+		publication="20140318083046"
 	>
 		<description>
 		scala_http_client
