@@ -35,9 +35,9 @@ You could format the response to any Object. You could use this feature to forma
 
     val formattedResponse:String = response.format_to[Person]((s:String) => service.deserialize[T](s));
 
-## Tests
+### Tests
 
-The tests need a [scalawebtemplate][https://github.com/adrianobrito/scalawebtemplate] project to execute. 
+The tests need a [scalawebtemplate](https://github.com/adrianobrito/scalawebtemplate) project to execute the tests. 
 
 ### Add to your Project
 
