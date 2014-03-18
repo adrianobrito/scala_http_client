@@ -3,7 +3,7 @@ scala_http_client
 
 A Http client for Scala Apps. It could be used on Service Oriented Applications. It make simple to call any URL with a HTTP method, supporting only the four HTTP basic methods: GET, POST, PUT, DELETE. 
 
-## Use
+### Use
 
 Invoking GET requests on a specified URL:
 
@@ -25,6 +25,6 @@ Invoking POST requests on specified URL with Headers and sending Data:
                                             .headers(Map("Content-Type" -> "application/json"))
                                             .execute
 
-## Add to your Project
+### Add to your Project
 
 It`s not deployed to Maven Central Repository. You will can download it soon.
