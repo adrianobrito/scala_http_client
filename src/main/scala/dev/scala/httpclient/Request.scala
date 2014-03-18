@@ -10,9 +10,9 @@ import collection.JavaConversions._
 
 class Request(var url:String, method:String, 
           	  val timeout:Int, 
-          	  var _data:String = null,
-          	  var _params:Map[String,String] = null, 
-          	  var _headers:Map[String,String] = null) {
+          	  private var _data:String = null,
+          	  private var _params:Map[String,String] = null, 
+          	  private var _headers:Map[String,String] = null) {
 
   implicit def httpConnectionToParametrizedHttpConnection(conn:HttpURLConnection) = new ParametrizedHttpURLConnection(conn)
   
