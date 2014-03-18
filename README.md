@@ -31,7 +31,7 @@ Invoking GET requests on specified URL with reversed Response Content:
                                             .execute;
     val formattedResponse:String = response.format_to[String]((s:String) => s.reverse)
 
-You could format the response to any Class. You could use this feature to format JSON or XML Requests to any Class, integrated with librarys like json4s or Jackson, like the example below:
+You could format the response to any Class. You could use this feature to format JSON or XML Requests to any Class, integrated with libraries like json4s or Jackson, like the example below:
 
     val formattedResponse:String = response.format_to[Person]((s:String) => service.deserialize[T](s));
 
