@@ -18,10 +18,10 @@ class Request(var url:String, method:String,
   
   def params(map:Map[String,String]):Request = {
     if(method == "GET" || method == "DELETE"){
-      var first = false;
+      var first = true;
       val result:StringBuilder = new StringBuilder().append("?");
       map.foreach{ case (key,value) => {
-	    		if(first) first = true;
+	    		if(first) first = false;
 	    		else result.append("&");
 	    		
 	    		result.append(key)
@@ -100,7 +100,7 @@ class ParametrizedHttpURLConnection(val connection:HttpURLConnection){
     var first:Boolean = true;
     val result:StringBuilder = new StringBuilder();
     map.foreach{ case (key,value) => {
-    		if(first) first = true;
+    		if(first) first = false;
     		else result.append("&");
     		
     		result.append(key, "UTF-8")
